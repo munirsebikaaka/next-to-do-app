@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #e0e0e0;
+  --border-color: #dbe0eb;
+  --hover-color: #87f0ea;
+  --primary-color: #0bdacf;
+  --secondary-color: #e5faee;
+  --unknown-color: #008d3b;
+  --errorbackgroung-color: #fff0f0;
+  --errorword-color: #e40000;
+}
+.todo-app {
+  max-width: 1200px;
+  margin: 10rem auto;
+  font-family: sans-serif;
+}
+.head {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.inputs {
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 6px 10px var(--background-color);
+}
+#type-input {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #eeeded;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.inputs,
+.cell,
+.task {
+  padding: 10px;
+}
+.inner-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  background-color: var(--border-color);
+}
+.inputs,
+.inner-cell,
+.news {
+  margin: 4px;
+}
+
+.news {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.news1 {
+  background-color: var(--secondary-color);
+}
+.news2 {
+  background-color: var(--secondary-color);
+  color: var(--unknown-color);
+}
+.news3 {
+  background-color: var(--errorbackgroung-color);
+  color: var(--errorword-color);
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.cell {
+  box-shadow: 0 2px 4px var(--border-color);
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.check-tick,
+.todobtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.check-tick:hover,
+.todobtn:hover {
+  background-color: var(--hover-color);
+  transition: all 0.3s;
+}
+.check-tick {
+  padding: 6px;
+  border-radius: 5px;
+}
+.check {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s;
+}
+.check:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.main-btn {
+  display: inline-block;
+  background-color: var(--border-color);
+}
