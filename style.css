@@ -40,12 +40,18 @@
 .task {
   padding: 10px;
 }
-.inner-cell {
+.inner-cell,
+.inner-cell1,
+.inner-cell2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 5px;
   background-color: var(--border-color);
+}
+.icon {
+  width: 60px;
+  height: 60px;
 }
 .inputs,
 .inner-cell,
@@ -59,9 +65,10 @@
   font-weight: 500;
 }
 p {
-  font-size: 1.4rem;
+  /* font-size: 1.6rem; */
   font-weight: 300;
 }
+
 .news1 {
   background-color: var(--secondary-color);
 }
@@ -117,4 +124,7 @@ button {
 .main-btn {
   display: inline-block;
   background-color: var(--border-color);
+}
+.main-btn1 {
+  display: flex;
 }
