@@ -12,6 +12,18 @@
   --unknown-color: #008d3b;
   --errorbackgroung-color: #fff0f0;
   --errorword-color: #e40000;
+
+  --bg-white: #fff;
+  --tw-shadow-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --successBg: #e5faee;
+  --successText: #008d3b;
+  --errorBg: #fff0f0;
+  --errorText: #e40000;
 }
 .todo-app {
   max-width: 1200px;
@@ -25,15 +37,21 @@
 }
 .inputs {
   display: flex;
-  gap: 10px;
-  box-shadow: 0 6px 10px var(--background-color);
+  /* gap: 10px;
+  box-shadow: 0 6px 10px var(--background-color); */
 }
-#type-input {
+.type-input {
   width: 100%;
-  display: inline-block;
+  /* display: inline-block; */
   border: 1px solid #eeeded;
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 0.8rem;
+  /* text-align: center;
+   */
+  padding: 12px;
+  border-radius: 6px;
+}
+.type-input:focus {
+  outline: none;
 }
 .inputs,
 .cell,
@@ -53,11 +71,11 @@
   width: 60px;
   height: 60px;
 }
-.inputs,
+/* .inputs,
 .inner-cell,
 .news {
   margin: 4px;
-}
+} */
 
 .news {
   text-align: center;
@@ -97,6 +115,11 @@ button {
   font-size: 1.2rem;
   border-radius: 5px;
 }
+
+.todobtn {
+  padding: 8px;
+}
+
 .check-tick,
 .todobtn {
   background-color: var(--primary-color);
@@ -127,4 +150,117 @@ button {
 }
 .main-btn1 {
   display: flex;
+}
+
+/*======MOXHUS====== */
+.todo-form {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.input-wrapper {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+  padding: 16px;
+  gap: 12px;
+  align-items: center;
+}
+
+.result-wrapper {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  justify-content: space-around;
+}
+.result {
+  background-color: var(--bg-white);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+  padding: 20px;
+  width: 100%;
+}
+
+.heading {
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.heading-1 {
+  background-color: aliceblue;
+  color: #000;
+}
+.heading-2 {
+  background-color: var(--successBg);
+  color: var(--successText);
+}
+.heading-3 {
+  background-color: var(--errorBg);
+  color: var(--errorText);
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  margin: 4px 0;
+  gap: 12px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.list-item-title {
+  font-size: large;
+}
+
+.list-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.btn-1 {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  border: 1px solid transparent;
+}
+.btn-1:hover {
+  background-color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s;
+}
+
+.btn-2:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+}
+
+.notodo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
 }

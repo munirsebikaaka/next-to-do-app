@@ -9,10 +9,30 @@
   <body>
     <div class="todo-app">
       <h1 class="head">My To Do List</h1>
-      <div class="inputs">
-        <input type="text" id="type-input" placeholder="Add to do" />
-        <button class="todobtn">Add</button>
+      <div class="inputs input-wrapper" id="inputWrapper"></div>
+      <!-- MOXHUS -->
+      <div class="result-wrapper">
+        <div class="result result-1">
+          <h2 class="heading heading-1">New Todos</h2>
+          <ul id="newToDo">
+            <li class="notodo-wrapper" id="notodowrapper-new">No Todos Available</li>
+          </ul>
+        </div>
+        <div class="result result-2">
+          <h2 class="heading heading-2">Completed Todos</h2>
+          <ul id="completedToDo">
+            <li class="notodo-wrapper" id="notodowrapper-completed">No Todos Available</li>
+          </ul>
+        </div>
+        <div class="result result-3">
+          <h2 class="heading heading-3">Cancelled Todos</h2>
+          <ul id="cancelledToDo">
+            <li class="notodo-wrapper" id="notodowrapper-cancelled">No Todos Available</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- MUNIL CODE -->
       <div class="options">
         <div class="cell">
           <h1 class="news news1">New Todos</h1>
@@ -70,10 +90,7 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
